@@ -8,6 +8,7 @@ const Form = props =>{
             <input
                 onChange = {props.onInputChange}
                 value = {props.formData.fname}
+                name ='fname'
                 type ='text'
                 />
         </label>
@@ -16,14 +17,7 @@ const Form = props =>{
             <input
                 onChange = {props.onInputChange}
                 value = {props.formData.lname}
-                type ='text'
-                />
-        </label>
-        <br/>
-        <label>Last Name
-            <input
-                onChange = {props.onInputChange}
-                value = {props.formData.lname}
+                name ='lname'
                 type ='text'
                 />
         </label>
@@ -31,7 +25,8 @@ const Form = props =>{
         <label>Email
             <input
                 onChange = {props.onInputChange}
-                value = {props.formData.lname}
+                value = {props.formData.email}
+                name ='email'
                 type ='text'
                 />
         </label>
@@ -39,7 +34,8 @@ const Form = props =>{
         <label>Role
             <input
                 onChange = {props.onInputChange}
-                value = {props.formData.lname}
+                value = {props.formData.role}
+                name='role'
                 type ='text'
                 />
         </label>
