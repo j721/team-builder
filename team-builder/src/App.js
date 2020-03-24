@@ -1,4 +1,5 @@
 import React,{useState} from 'react';
+import Form from "./components/Form";
 import logo from './logo.svg';
 import './App.css';
 
@@ -42,13 +43,13 @@ function App() {
   return (
     <div className="App">
         <Form
-        onInputChange ={onInputChange}
-        formData = {formData}
-        onFormSubmit ={onFormSubmit}
+          onInputChange ={onInputChange}
+          formData = {formData}
+          onFormSubmit ={onFormSubmit}
         />
         <h3>List of Team Members:</h3>
         {
-        members.map(person => <div key={person.id}>{person.fname} {person.lname}</div>)
+        members.map(person => <div key={person.fname}>{person.fname} {person.lname}</div>)
       }
         </div>
   );
