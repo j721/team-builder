@@ -47,13 +47,14 @@ function App() {
           formData = {formData}
           onFormSubmit ={onFormSubmit}
         />
+      <div className ="List-wrapper"> 
         <h3>List of Team Members:</h3>
         {
         members.map(person => <div key ={person.id}>
           {person.fname} {person.lname} {person.email} {person.role}
            </div>)
       }
-       
+       </div>
         </div>
     )
 }

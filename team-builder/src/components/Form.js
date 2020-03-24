@@ -9,6 +9,7 @@ const Form = props =>{
                 onChange = {props.onInputChange}
                 value = {props.formData.fname}
                 name ='fname'
+                placeholder ='Please enter first name'
                 type ='text'
                 />
         </label>
@@ -18,6 +19,7 @@ const Form = props =>{
                 onChange = {props.onInputChange}
                 value = {props.formData.lname}
                 name ='lname'
+                placeholder ='Please enter last name'
                 type ='text'
                 />
         </label>
@@ -26,6 +28,7 @@ const Form = props =>{
             <input
                 onChange = {props.onInputChange}
                 value = {props.formData.email}
+                placeholder ='Please enter your email'
                 name ='email'
                 type ='text'
                 />
@@ -35,10 +38,12 @@ const Form = props =>{
             <input
                 onChange = {props.onInputChange}
                 value = {props.formData.role}
+                placeholder = 'Please fill in your Role'
                 name='role'
                 type ='text'
                 />
         </label>
+        <br/>
             <button>Submit</button>
         </form>
         </div>
