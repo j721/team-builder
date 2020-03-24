@@ -37,7 +37,12 @@
   }
 }
 
-.form-wrapper{
+body{
+  background-color: #6bd0d052;
+  opacity: 0.8;
+}
+
+.form{
   display:flex;
   flex-direction: column; 
 }
