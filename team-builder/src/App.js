@@ -1,5 +1,6 @@
 import React,{useState} from 'react';
 import Form from "./components/Form";
+// import Members from "./components/Members";
 import logo from './logo.svg';
 import './App.css';
 
@@ -30,7 +31,6 @@ function App() {
 
   const onFormSubmit = event=>{
     event.preventDefault()
-
     const newMember ={
       fname: formData.fname,
       lname: formData.lname,
@@ -39,6 +39,19 @@ function App() {
     }
     setMembers([...members, newMember])
   }
+
+
+  // const addNewTeamMember = member=>{
+  //   const newMember ={
+  //     fname: member.fname,
+  //     lname: member.lname,
+  //     email: member.email,
+  //     role: member.role
+  //   }
+  //   setMembers ([...members, newMember])
+  // };
+
+ 
 
   return (
     <div className="App">
