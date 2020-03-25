@@ -20,7 +20,7 @@ const Form = props =>{
                 value = {props.formData.lname}
                 name ='lname'
                 placeholder ='Please enter last name'
-                type ='text'
+                type ='text'        
                 />
         </label>
             <br/>
@@ -44,7 +44,7 @@ const Form = props =>{
                 />
         </label>
         <br/>
-            <button>Submit</button>
+            <button type ="submit">Add</button>
         </form>
         </div>
     );
